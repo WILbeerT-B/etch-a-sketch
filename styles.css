@@ -12,19 +12,16 @@ html, body {
     padding: 0;
     flex-wrap: wrap;
     width: 540px;
+    height: 540px;
 }
 
 .container > div {
     border: 1px solid black;
     background-color: white;
     flex: 1;
-    color: transparent;
-    width: 30px;
-    height: 30px;
+    padding: 15px;
 }
 
 .container > div:hover {
     background-color: black;
 }
-
-
