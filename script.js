@@ -29,9 +29,9 @@ function colorGrid(className) {
     const colorDivs = document.getElementsByClassName(className);
     for(let i=0; i<colorDivs.length; i++) {
         colorDivs[i].addEventListener('mouseenter', () => {
-                colorDivs[i].style.backgroundColor = "black";
-            });
-        }
+            colorDivs[i].style.backgroundColor = "black";
+        });
+    }
 }
 
 chooseGrid();
