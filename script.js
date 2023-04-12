@@ -21,14 +21,17 @@ function generateGrid(divNum = 16 * 16, className = 'grid-16x16') {
         gridContainer.classList.remove('grid-8x8', 'grid-16x16', 'grid-24x24');
         divSquare.classList.add(className);
         gridContainer.appendChild(divSquare);
-        //paint the grid with black
-        let colorDivs = document.getElementsByClassName(className);
-        for(let i=0; i<colorDivs.length; i++) {
-            colorDivs[i].addEventListener('mouseenter', () => {
+        colorGrid(className);
+    }
+}
+
+function colorGrid(className) {
+    const colorDivs = document.getElementsByClassName(className);
+    for(let i=0; i<colorDivs.length; i++) {
+        colorDivs[i].addEventListener('mouseenter', () => {
                 colorDivs[i].style.backgroundColor = "black";
             });
         }
-    }
 }
 
 chooseGrid();
